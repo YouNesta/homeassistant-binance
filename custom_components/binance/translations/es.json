@@ -1,0 +1,75 @@
+{
+  "title": "Binance",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configura tu integración con Binance",
+        "description": "Introduce los detalles de tu API de Binance a continuación.",
+        "data": {
+          "name": "Nombre único",
+          "api_key": "Clave API",
+          "api_secret": "Secreto API",
+          "domain": "dominio",
+          "native_currency": "Moneda nativa (por defecto: USDT)",
+          "enable_earn": "Habilitar Ganar",
+          "enable_balances": "Habilitar Saldos",
+          "enable_exchanges": "Habilitar Intercambios"
+        }
+      },
+      "balances": {
+        "title": "Configuración de Saldos",
+        "description": "Configura tus preferencias de saldo.",
+        "data": {
+          "balances": "Detalles de Saldo"
+        }
+      },
+      "exchanges": {
+        "title": "Configuración de Intercambios",
+        "description": "Configura tus preferencias de intercambio.",
+        "data": {
+          "exchanges": "Detalles de Intercambio"
+        }
+      }
+    }
+  },
+  "options": {
+    "title": "Opciones para la Integración con Binance",
+    "data": {
+      "domain": "dominio",
+      "native_currency": "Moneda nativa",
+      "enable_earn": "Habilitar Ganar",
+      "enable_balances": "Habilitar Saldos",
+      "balances": "Lista de Saldos",
+      "enable_echanges": "Habilitar Intercambios",
+      "exchanges": "Lista de Intercambios"
+    }
+  },
+  "services": {
+    "withdraw": {
+      "name": "Retirar",
+      "description": "Retirar fondos de tu cuenta de Binance.",
+      "fields": {
+        "entity_id": {
+          "description": "El ID del dispositivo de la instancia de integración de Binance a controlar.",
+          "example": "BTC"
+        },
+        "amount": {
+          "description": "La cantidad de moneda a retirar.",
+          "example": "0.5"
+        },
+        "address": {
+          "description": "La dirección de destino para la retirada.",
+          "example": "0xe2d737b0f76d05a0e077064492b7d24ffa3a2c16"
+        },
+        "name": {
+          "description": "Nombre del retiro",
+          "example": "0xe2d737b0f76d05a0e077064492b7d24ffa3a2c16"
+        },
+        "address_tag": {
+          "description": "Etiqueta de dirección opcional",
+          "example": "4a7n8"
+        }
+      }
+    }
+  }
+}

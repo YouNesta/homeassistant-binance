@@ -1,0 +1,75 @@
+{
+  "title": "Binance",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Настройте интеграцию с Binance",
+        "description": "Введите ниже данные вашего API Binance.",
+        "data": {
+          "name": "Уникальное имя",
+          "api_key": "Ключ API",
+          "api_secret": "Секрет API",
+          "domain": "домен",
+          "native_currency": "Основная валюта (по умолчанию: USDT)",
+          "enable_earn": "Включить Заработок",
+          "enable_balances": "Включить Балансы",
+          "enable_exchanges": "Включить Обмены"
+        }
+      },
+      "balances": {
+        "title": "Настройка Балансов",
+        "description": "Настройте предпочтения по балансу.",
+        "data": {
+          "balances": "Детали Баланса"
+        }
+      },
+      "exchanges": {
+        "title": "Настройка Обменов",
+        "description": "Настройте предпочтения по обмену.",
+        "data": {
+          "exchanges": "Детали Обменов"
+        }
+      }
+    }
+  },
+  "options": {
+    "title": "Опции для интеграции Binance",
+    "data": {
+      "domain": "домен",
+      "native_currency": "Основная валюта",
+      "enable_earn": "Включить Заработок",
+      "enable_balances": "Включить Балансы",
+      "enable_exchanges": "Включить Обмены",
+      "balances": "Список Балансов",
+      "exchanges": "Список Обменов"
+    }
+  },
+  "services": {
+    "withdraw": {
+      "name": "Снять",
+      "description": "Снять средства со своего аккаунта Binance.",
+      "fields": {
+        "entity_id": {
+          "description": "ID устройства интеграции Binance для управления.",
+          "example": "BTC"
+        },
+        "amount": {
+          "description": "Количество валюты для снятия.",
+          "example": "0.5"
+        },
+        "address": {
+          "description": "Адрес назначения для снятия.",
+          "example": "0xe2d737b0f76d05a0e077064492b7d24ffa3a2c16"
+        },
+        "name": {
+          "description": "Название снятия",
+          "example": "0xe2d737b0f76d05a0e077064492b7d24ffa3a2c16"
+        },
+        "address_tag": {
+          "description": "Дополнительный тег адреса",
+          "example": "4a7n8"
+        }
+      }
+    }
+  }
+}

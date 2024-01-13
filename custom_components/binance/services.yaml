@@ -1,0 +1,35 @@
+withdraw:
+  description: "Performs a withdrawal operation for a specified instance of the Binance integration."
+  fields:
+    entity_id:
+      description: "The unique ID of the Binance integration instance to control."
+      example: "1234567890abcdef1234567890abcdef"
+      required: true
+      selector:
+        entity:
+          domain: sensor
+          integration: binance
+          multiple: false
+    amount:
+      description: "The amount of coin to withdraw."
+      example: "0.5"
+      required: true
+
+      selector:
+        text: null
+    address:
+      description: "The address to which the coin will be sent."
+      example: "0xe2d737b0f76d05a0e077064492b7d24ffa3a2c16"
+      required: true
+      selector:
+        text: null
+    name:
+      description: "(Optional) Name of the withdraw"
+      example: "Withdraw for YouNesta"
+      selector:
+        text: null
+    address_tag:
+      description: "(Optional) Optionnal address tag"
+      example: "45678"
+      selector:
+        text: null

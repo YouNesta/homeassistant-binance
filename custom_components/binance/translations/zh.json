@@ -1,0 +1,75 @@
+{
+  "title": "Binance",
+  "config": {
+    "step": {
+      "user": {
+        "title": "配置您的币安集成",
+        "description": "在下面输入您的币安API详情。",
+        "data": {
+          "name": "唯一名称",
+          "api_key": "API密钥",
+          "api_secret": "API秘密",
+          "domain": "域名",
+          "native_currency": "本币（默认：USDT）",
+          "enable_earn": "启用赚取",
+          "enable_balances": "启用余额",
+          "enable_exchanges": "启用交易"
+        }
+      },
+      "balances": {
+        "title": "余额配置",
+        "description": "配置您的余额偏好。",
+        "data": {
+          "balances": "余额详情"
+        }
+      },
+      "exchanges": {
+        "title": "交易配置",
+        "description": "配置您的交易偏好。",
+        "data": {
+          "exchanges": "交易详情"
+        }
+      }
+    }
+  },
+  "options": {
+    "title": "币安集成选项",
+    "data": {
+      "domain": "域名",
+      "native_currency": "本币",
+      "enable_earn": "启用赚取",
+      "enable_balances": "启用余额",
+      "enable_exchanges": "启用交易",
+      "balances": "余额列表",
+      "exchanges": "交易列表"
+    }
+  },
+  "services": {
+    "withdraw": {
+      "name": "Withdraw",
+      "description": "从您的币安账户中提取资金。",
+      "fields": {
+        "entity_id": {
+          "description": "用于控制的币安集成实例的设备ID。",
+          "example": "58Hudh97"
+        },
+        "amount": {
+          "description": "要提取的货币数量。",
+          "example": "0.5"
+        },
+        "address": {
+          "description": "提款的目的地址。",
+          "example": "0xe2d737b0f76d05a0e077064492b7d24ffa3a2c16"
+        },
+        "name": {
+          "description": "提款的名称",
+          "example": "0xe2d737b0f76d05a0e077064492b7d24ffa3a2c16"
+        },
+        "address_tag": {
+          "description": "可选的地址标签",
+          "example": "4a7n8"
+        }
+      }
+    }
+  }
+}
