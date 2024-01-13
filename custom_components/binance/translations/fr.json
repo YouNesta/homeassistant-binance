@@ -1,0 +1,76 @@
+{
+  "title": "Binance",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configurer votre intégration Binance",
+        "description": "Entrez vos détails d'API Binance ci-dessous.",
+        "data": {
+          "name": "Nom unique",
+          "api_key": "Clé API",
+          "api_secret": "Secret API",
+          "domain": "domaine",
+          "native_currency": "Devise native (par défaut : USDT)",
+          "enable_earn": "Activer Earn",
+          "enable_balances": "Activer les Soldes",
+          "enable_exchanges": "Activer les Échanges",
+          "enable_fundings": "Activer les Soldes de Financement"
+        }
+      },
+      "balances": {
+        "title": "Configuration des Soldes",
+        "description": "Configurez vos préférences de solde.",
+        "data": {
+          "balances": "Détails des Soldes"
+        }
+      },
+      "exchanges": {
+        "title": "Configuration des Échanges",
+        "description": "Configurez vos préférences d'échange.",
+        "data": {
+          "exchanges": "Détails des Échanges"
+        }
+      }
+    }
+  },
+  "options": {
+    "title": "Options pour l'intégration Binance",
+    "data": {
+      "domain": "domaine",
+      "native_currency": "Devise Native",
+      "enable_earn": "Activer Earn",
+      "enable_balances": "Activer les Soldes",
+      "enable_exchanges": "Activer les Échanges",
+      "balances": "Liste des Soldes",
+      "exchanges": "Liste des Échanges"
+    }
+  },
+  "services": {
+    "withdraw": {
+      "name": "Retirer",
+      "description": "Retirer des fonds de votre compte Binance.",
+      "fields": {
+        "entity_id": {
+          "description": "L'ID de l'appareil de l'instance d'intégration Binance à contrôler.",
+          "example": "BTC"
+        },
+        "amount": {
+          "description": "Le montant de la monnaie à retirer.",
+          "example": "0.5"
+        },
+        "address": {
+          "description": "L'adresse de destination pour le retrait.",
+          "example": "0xe2d737b0f76d05a0e077064492b7d24ffa3a2c16"
+        },
+        "name": {
+          "description": "Nom du retrait",
+          "example": "0xe2d737b0f76d05a0e077064492b7d24ffa3a2c16"
+        },
+        "address_tag": {
+          "description": "Étiquette d'adresse optionnelle",
+          "example": "4a7n8"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "title": "Binance",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure your Binance integration",
+        "description": "Enter your Binance API details below.",
+        "data": {
+          "name": "Unique name",
+          "api_key": "API Key",
+          "api_secret": "API Secret",
+          "domain": "domain",
+          "native_currency": "Native Currency (default: USDT)",
+          "enable_earn": "Enable Earn",
+          "enable_balances": "Enable Balances",
+          "enable_exchanges": "Enable Exchanges",
+          "enable_fundings": "Activer les Soldes de Financement"
+        }
+      },
+      "balances": {
+        "title": "Balances Configuration",
+        "description": "Configure your balance preferences.",
+        "data": {
+          "balances": "Balance Details"
+        }
+      },
+      "exchanges": {
+        "title": "Exchanges Configuration",
+        "description": "Configure your exchange preferences.",
+        "data": {
+          "exchanges": "Exchange Details"
+        }
+      }
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Options for Binance Integration",
+        "data": {
+          "domain": "domain",
+          "native_currency": "Native Currency",
+          "enable_earn": "Enable Earn",
+          "enable_balances": "Enable Balances",
+          "enable_exchanges": "Enable Exchanges",
+          "enable_fundings": "Activer les Soldes de Financement",
+          "balances": "List of Balances",
+          "exchanges": "List of Exchanges"
+        }
+      }
+    }
+  },
+  "services": {
+    "withdraw": {
+      "name": "Withdraw",
+      "description": "Withdraw funds from your Binance account.",
+      "fields": {
+        "entity_id": {
+          "name": "Balance for Withdraw",
+          "description": "The device ID of the Binance integration instance to control.",
+          "example": "BTC"
+        },
+        "amount": {
+          "name": "Amount to Withdraw",
+          "description": "The amount of currency to withdraw.",
+          "example": "0.5"
+        },
+        "address": {
+          "name": "Adress to Withdraw",
+          "description": "The destination address for the withdrawal.",
+          "example": "0xe2d737b0f76d05a0e077064492b7d24ffa3a2c16"
+        },
+        "name": {
+          "name": "Name for Withdraw",
+          "description": "Name of the withdraw",
+          "example": "0xe2d737b0f76d05a0e077064492b7d24ffa3a2c16"
+        },
+        "address_tag": {
+          "name": "Adress Tag ",
+          "description": "Optionnal address tag",
+          "example": "4a7n8"
+        }
+      }
+    }
+  }
+}

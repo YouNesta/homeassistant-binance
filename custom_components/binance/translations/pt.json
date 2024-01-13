@@ -1,0 +1,73 @@
+{
+  "title": "Binance",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Configure sua integração Binance",
+        "description": "Insira os detalhes da sua API Binance abaixo.",
+        "data": {
+          "name": "Nome único",
+          "api_key": "Chave API",
+          "api_secret": "Segredo API",
+          "domain": "domain",
+          "native_currency": "Moeda nativa (padrão: USDT)",
+          "enable_balances": "Ativar Saldos",
+          "enable_exchanges": "Ativar Trocas"
+        }
+      },
+      "balances": {
+        "title": "Configuração de Saldos",
+        "description": "Configure suas preferências de saldo.",
+        "data": {
+          "balances": "Detalhes dos Saldos"
+        }
+      },
+      "exchanges": {
+        "title": "Configuração de Trocas",
+        "description": "Configure suas preferências de troca.",
+        "data": {
+          "exchanges": "Detalhes das Trocas"
+        }
+      }
+    }
+  },
+  "options": {
+    "title": "Opções para a Integração Binance",
+    "data": {
+      "native_currency": "Moeda Nativa",
+      "balances": "Lista de Saldos",
+      "exchanges": "Lista de Trocas",
+      "domain": "domain",
+      "enable_balances": "Ativar Saldos",
+      "enable_exchanges": "Ativar Trocas"
+    }
+  },
+  "services": {
+    "withdraw": {
+      "name": "Retirar",
+      "description": "Retirar fundos da sua conta Binance.",
+      "fields": {
+        "entity_id": {
+          "description": "O ID do dispositivo da instância de integração Binance a controlar.",
+          "example": "BTC"
+        },
+        "amount": {
+          "description": "A quantidade de moeda a ser retirada.",
+          "example": "0.5"
+        },
+        "address": {
+          "description": "O endereço de destino para a retirada.",
+          "example": "0xe2d737b0f76d05a0e077064492b7d24ffa3a2c16"
+        },
+        "name": {
+          "description": "Nome da retirada",
+          "example": "0xe2d737b0f76d05a0e077064492b7d24ffa3a2c16"
+        },
+        "address_tag": {
+          "description": "Tag de endereço opcional",
+          "example": "4a7n8"
+        }
+      }
+    }
+  }
+}

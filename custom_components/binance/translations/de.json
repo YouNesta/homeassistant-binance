@@ -1,0 +1,73 @@
+{
+  "title": "Binance",
+  "config": {
+    "step": {
+      "user": {
+        "title": "Konfigurieren Sie Ihre Binance-Integration",
+        "description": "Geben Sie unten Ihre Binance-API-Daten ein.",
+        "data": {
+          "name": "Eindeutiger Name",
+          "api_key": "API-Schlüssel",
+          "api_secret": "API-Geheimnis",
+          "domain": "domain",
+          "native_currency": "Heimatwährung (Standard: USDT)",
+          "enable_balances": "Salden aktivieren",
+          "enable_exchanges": "Handel aktivieren"
+        }
+      },
+      "balances": {
+        "title": "Saldo-Konfiguration",
+        "description": "Konfigurieren Sie Ihre Saldo-Einstellungen.",
+        "data": {
+          "balances": "Saldodetails"
+        }
+      },
+      "exchanges": {
+        "title": "Handels-Konfiguration",
+        "description": "Konfigurieren Sie Ihre Handelseinstellungen.",
+        "data": {
+          "exchanges": "Handelsdetails"
+        }
+      }
+    }
+  },
+  "options": {
+    "title": "Optionen für die Binance-Integration",
+    "data": {
+      "native_currency": "Heimatwährung",
+      "balances": "Liste der Salden",
+      "exchanges": "Liste der Handel",
+      "domain": "domain",
+      "enable_balances": "Salden aktivieren",
+      "enable_exchanges": "Handel aktivieren"
+    }
+  },
+  "services": {
+    "withdraw": {
+      "name": "Mittel",
+      "description": "Mittel von deinem Binance-Konto abheben.",
+      "fields": {
+        "entity_id": {
+          "description": "Die Geräte-ID der Binance-Integrationsinstanz zur Steuerung.",
+          "example": "BTC"
+        },
+        "amount": {
+          "description": "Die Menge der abzuhebenden Währung.",
+          "example": "0.5"
+        },
+        "address": {
+          "description": "Die Zieladresse für die Abhebung.",
+          "example": "0xe2d737b0f76d05a0e077064492b7d24ffa3a2c16"
+        },
+        "name": {
+          "description": "Name der Abhebung",
+          "example": "0xe2d737b0f76d05a0e077064492b7d24ffa3a2c16"
+        },
+        "address_tag": {
+          "description": "Optional Kennzeichnung der Adresse",
+          "example": "4a7n8"
+        }
+      }
+    }
+  }
+}
